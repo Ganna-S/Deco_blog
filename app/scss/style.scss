@@ -1,11 +1,167 @@
-@import 'global';
+@import "global";
+@import "fonts";
 
 //start header
+.header {
+  min-height: 345px;
+  background-color: #212429;
+  .header__box {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    &-social {
+      li {
+        margin-left: 40px;
+      }
+    }
+    &-menu {
+      z-index: 2;
+      
+      ul {
+        width: 1120px;
+        margin-top: 15px;
+        display: none;
+        background-color: #3b4f61;
+        padding: 20px 40px;
+        li{
+          display: inline-block;
+        }
+        a {
+          color: #fff;
+        }
+        li + li {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+.header__menu-btn {
+  display: block;
+  width: 30px;
+}
+.header__menu-row {
+  background-color: #fff;
+  height: 4px;
+  margin-bottom: 4px;
+}
+//end header
 
+//start slider
+.slider__box {
+  margin-top: -285px;
+}
+.slider__box-item {
+  max-width: 1170px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+.slider__content {
+  margin: 230px 0 230px 100px;
+  color: #fff;
+  max-width: 510px;
+  &-title {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  &-text {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.arrows__text {
+  color: #fff;
+  position: absolute;
+  top: 275px;
+  right: -12px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  transform: rotate(-90deg);
+}
+ul.slick-dots {
+  position: absolute;
+  top: 295px;
+  right: 80px;
+  transform: rotate(-90deg);
+  li {
+    height: 8px;
+    width: 8px;
+    border: 1px solid #fff;
+    margin-left: 10px;
+  }
+}
+.slick-dots li.slick-active {
+  background-color: #999999;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-arrow {
+  width: 12px;
+  height: 26px;
+  border: none;
+  background: transparent;
+}
 
-
-
-//end footer
-
-
-@import 'media';
+.slick-up {
+  position: absolute;
+  top: 160px;
+  right: 65px;
+  z-index: 2;
+}
+.slick-down {
+  position: absolute;
+  bottom: 175px;
+  right: 65px;
+  z-index: 2;
+}
+//end slider
+//start signup
+.signup {
+  margin-top: 25px;
+  margin-bottom: 85px;
+}
+.signup__box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  &-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 200px;
+    color: #212121;
+  }
+  &-data {
+    input {
+      width: 310px;
+      height: 50px;
+      background-color: #fff;
+      border: none;
+      margin-left: 15px;
+      text-transform: uppercase;
+      padding-left: 30px;
+      color: #999999;
+    }
+  }
+  button{
+    width: 200px;
+    height: 45px;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    background-color: #212121;
+    cursor: pointer;
+  }
+}
+//end signup
