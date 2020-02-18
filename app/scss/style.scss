@@ -16,14 +16,14 @@
     }
     &-menu {
       z-index: 2;
-      
+
       ul {
         width: 1120px;
         margin-top: 15px;
         display: none;
         background-color: #3b4f61;
         padding: 20px 40px;
-        li{
+        li {
           display: inline-block;
         }
         a {
@@ -132,7 +132,7 @@ ul.slick-dots {
   justify-content: space-between;
   margin: 0 20px;
   &-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 4px;
@@ -153,7 +153,7 @@ ul.slick-dots {
       color: #999999;
     }
   }
-  button{
+  button {
     width: 200px;
     height: 45px;
     color: #fff;
@@ -165,3 +165,96 @@ ul.slick-dots {
   }
 }
 //end signup
+//start footer
+.footer {
+  color: #f9f9fb;
+  background-color: #212429;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+.footer__copy {
+  background-color: #17191c;
+}
+.footer__col {
+  max-width: 270px;
+  &-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &-text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  &-name {
+    position: relative;
+    span {
+      font-family: "Mrs Saint Delafield", cursive;
+      font-size: 28px;
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+      transform: rotate(-15deg);
+      z-index: 2;
+    }
+  }
+  &-twitter {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+}
+.twitter__item {
+  position: relative;
+}
+.footer__col-twitter::before{
+  font-family: 'icomoon' !important;
+  content: "\ea96";
+  position: absolute;
+  left: -25px;
+  top: 0;
+}
+.footer__col + .footer__col {
+  margin-left: 30px;
+}
+.footer__twitter {
+  .twitter {
+    padding-bottom: 25px;
+  }
+}
+.footer__instagram-name,
+.footer__instagram-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__instagram-name {
+  margin-bottom: 5px;
+}
+.instagram-name {
+  margin-top: 15px;
+}
+.instagram {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #65676a;
+}
+.twitter__box {
+  margin-left: 20px;
+}
+.footer__inner-copy{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 15px 0;
+  color: #999999;
+  a{
+    color: #999999;
+    margin-left: 15px;
+  }
+}
+//end footer
