@@ -11,4 +11,15 @@ $(function () {
         $('.header__box-menu ul').slideToggle();
     });
 
+    jQuery(document).ready(function($) {
+        $('.posts__inner').masonry({
+            // options
+            itemSelector: '.posts__inner-item',
+            columnWidth: '.persent-size',
+            gutter: '.gutter-width',
+            percentPosition: true
+        });
+    });
+
+
 });
