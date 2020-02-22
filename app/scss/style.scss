@@ -36,6 +36,9 @@
     }
   }
 }
+.header__top {
+  min-height: 55px;
+}
 .header__menu-btn {
   display: block;
   width: 30px;
@@ -207,8 +210,9 @@ ul.slick-dots {
   background-position: top center;
   background-size: cover;
 }
-.post__label,
-.post__date {
+.label,
+.date,
+.author {
   display: block;
   text-align: center;
   color: #999999;
@@ -222,12 +226,13 @@ ul.slick-dots {
 .post__date {
   padding-bottom: 25px;
 }
-.post__title {
+.title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #212121;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 .post__text {
   color: #464646;
@@ -282,9 +287,6 @@ ul.slick-dots {
     color: #fff;
   }
   .post__author {
-    color: #999999;
-    text-transform: uppercase;
-    font-weight: 400;
     margin-bottom: 40px;
   }
 }
@@ -334,6 +336,173 @@ ul.slick-dots {
   color: #212121;
 }
 //end posts
+
+//start about-page
+.about__page {
+  margin: 100px 0 105px;
+}
+.about-page-inner {
+  display: flex;
+}
+.about-page__content {
+  margin-right: 30px;
+  max-width: 780px;
+  background-color: #fff;
+}
+.about__label {
+  margin-top: 65px;
+}
+.about__title {
+  font-size: 28px;
+  line-height: 24px;
+  padding: 30px 0 20px;
+}
+.about__info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.about__info-author {
+  text-align: center;
+}
+.about__info-author,
+.about__info-date {
+  margin-left: 60px;
+}
+.about__label,
+.about__info-author,
+.about__info-date {
+  font-size: 16px;
+}
+.about__text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin: 20px 20px;
+  span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+.post__item {
+  a {
+    width: 80px;
+    height: 60px;
+  }
+}
+.about-page__acide {
+  background-color: #fff;
+  max-width: 300px;
+  padding: 0 30px;
+}
+.aside__item {
+  margin-top: 40px;
+  width: 240px;
+  color: #212121;
+}
+.search {
+  position: relative;
+  input {
+    background-color: #f9f9fb;
+    border: none;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+  }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 11px;
+    background-color: #212121;
+    color: #fff;
+  }
+}
+.aside__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  font-size: 20px;
+}
+.category__list {
+  padding-top: 10px;
+  li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 50px;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  a {
+    color: #212121;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
+.picture {
+  img {
+    max-width: 240px;
+  }
+}
+.post__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 20px;
+  border-bottom: 1px solid #f7f7f7;
+  &-img {
+    min-width: 80px;
+    margin-right: 10px;
+    position: relative;
+  }
+}
+.post__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.post__item-info {
+  display: flex;
+  font-size: 12px;
+  padding-top: 15px;
+}
+.post__item-date {
+  padding-right: 30px;
+}
+.icon-user,
+.icon-calendar {
+  width: 40px;
+  height: 36px;
+  color: #464646;
+  margin-right: 15px;
+}
+.about__info-author,
+.about__info-date {
+  margin-left: 30px;
+}
+.about__icon-img {
+  position: absolute;
+  top: 635px;
+  left: 475px;
+  width: 40px;
+  height: 36px;
+  text-align: center;
+}
+//end about-page
 //start footer
 .footer {
   color: #f9f9fb;
@@ -438,4 +607,5 @@ ul.slick-dots {
     margin-left: 15px;
   }
 }
+
 //end footer
