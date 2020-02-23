@@ -343,6 +343,7 @@ ul.slick-dots {
 }
 .about-page-inner {
   display: flex;
+  position: relative;
 }
 .about-page__content {
   margin-right: 30px;
@@ -496,16 +497,16 @@ ul.slick-dots {
 }
 .about__icon-img {
   position: absolute;
-  top: 635px;
-  left: 475px;
+  top: 470px;
+  left: 370px;
   width: 40px;
   height: 36px;
   text-align: center;
 }
 .about__icon-imgp {
   position: absolute;
-  top: 164px;
-  right: 497px;
+  top: 0;
+  right: 390px;
   padding: 12px 14px;
   text-align: center;
   background-color: #cc2127;
