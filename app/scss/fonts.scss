@@ -1,17 +1,18 @@
 @font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"),
-    url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-globe:before {
+  content: "\e907";
+}
+.icon-envelope-o:before {
+  content: "\e906";
+}
+.icon-home:before {
+  content: "\e904";
+}
 .icon-pinterest-p:before {
   content: "\e902";
 }
@@ -41,6 +51,9 @@
 }
 .icon-quotes-left:before {
   content: "\e977";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
 }
 .icon-pencil:before {
   content: "\e905";
