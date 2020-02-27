@@ -798,8 +798,64 @@ ul.slick-dots {
     font-size: 14px;
   }
 }
-
 //end contact page
+//start page 404
+.page__404 {
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+}
+.page__404-wrapper {
+  align-items: center;
+  img {
+    margin-bottom: 60px;
+  }
+  input {
+    width: 600px;
+    height: 49px;
+    border: 1px solid #cccccc;
+    padding: 17px 25px 15px;
+    color: #363636;
+    font-size: 14px;
+  }
+  button {
+    background-color: #363636;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    padding: 16px 55px;
+    margin-left: -4px;
+  }
+  .page-404__title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .page-404__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 25px;
+  }
+  .page-404__link {
+    span{
+      color: #999999;
+      font-size: 17px;
+      padding-right: 10px;
+    }
+    a {
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #363636;
+    }
+  }
+}
+//end page 404
 //start footer
 .footer {
   color: #f9f9fb;
@@ -904,5 +960,4 @@ ul.slick-dots {
     margin-left: 15px;
   }
 }
-
 //end footer
