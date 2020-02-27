@@ -668,8 +668,23 @@ ul.slick-dots {
 .box__social {
   display: flex;
   justify-content: space-between;
-  .social {
+}
+.box__social-item {
+  margin-top: 20px;
+  width: 200px;
+  height: 45px;
+  span {
+    padding: 10px 15px 17px;
     background-color: #fff;
+    font-size: 18px;
+  }
+  a {
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 14px 20px;
+    font-size: 16px;
   }
 }
 .recomended__posts {
@@ -841,7 +856,7 @@ ul.slick-dots {
     margin-bottom: 25px;
   }
   .page-404__link {
-    span{
+    span {
       color: #999999;
       font-size: 17px;
       padding-right: 10px;
