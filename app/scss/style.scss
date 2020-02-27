@@ -671,14 +671,16 @@ ul.slick-dots {
 }
 .box__social-item {
   margin-top: 20px;
-  width: 200px;
-  height: 45px;
-  span {
+  & + .box__social-item{
+    margin-left: 20px;
+  }
+  .icon {
     padding: 10px 15px 17px;
     background-color: #fff;
     font-size: 18px;
+    color: #464646;
   }
-  a {
+  .social {
     color: #999999;
     text-transform: uppercase;
     font-weight: 400;
@@ -687,6 +689,7 @@ ul.slick-dots {
     font-size: 16px;
   }
 }
+
 .recomended__posts {
   padding: 40px 30px 0 30px;
   font-family: "Montserrat", sans-serif;
