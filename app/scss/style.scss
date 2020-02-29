@@ -1,5 +1,6 @@
 @import "global";
 @import "fonts";
+@import "media";
 
 //start header
 .header {
@@ -17,7 +18,7 @@
     }
     &-menu {
       width: 300px;
-      z-index: 2;
+      z-index: 4;
       align-items: center;
       ul {
         margin-top: 15px;
@@ -86,8 +87,8 @@
 .arrows__text {
   color: #fff;
   position: absolute;
-  top: 330px;
-  right: 95px;
+  top: 275px;
+  right: -12px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -972,6 +973,7 @@ ul.slick-dots {
     min-height: 120px;
   }
 }
+
 .twitter__box {
   margin-left: 20px;
 }
@@ -980,6 +982,7 @@ ul.slick-dots {
   justify-content: center;
   text-transform: uppercase;
   font-size: 12px;
+  line-height: 24px;
   padding: 15px 0;
   color: #999999;
   a {

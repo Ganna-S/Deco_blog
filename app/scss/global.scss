@@ -5,6 +5,8 @@
   html,
   body {
     height: 100%;
+    overflow-x: hidden;
+    position: relative;
   }
   .wrapper {
     display: flex;
@@ -34,7 +36,6 @@
     position: relative;
     min-width: 320px;
     position: relative;
-    overflow-x: hidden;
   }
   
   a {
@@ -55,4 +56,5 @@
   .container {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
   }
