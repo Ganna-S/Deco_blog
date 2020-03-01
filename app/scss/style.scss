@@ -358,9 +358,6 @@ ul.slick-dots {
   margin-right: 30px;
   max-width: 780px;
   background-color: #fff;
-  img {
-    max-width: 100%;
-  }
 }
 .about__label {
   margin-top: 65px;
@@ -586,10 +583,28 @@ ul.slick-dots {
   margin: 30px 20px;
   border-top: 1px solid #f7f7f7;
   padding: 30px 0 0;
+  .icon-bubbles4::before,
+  .icon-heart-o::before {
+    margin-right: 10px;
+    color: #464646;
+  }
 }
 .detail__comment {
   font-weight: 400;
   line-height: 24px;
+}
+.jq-ry-container {
+  position: relative;
+  margin-left: -75px;
+  margin-top: 3px;
+  padding: 0 5px;
+  line-height: 0;
+  display: block;
+  cursor: pointer;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  direction: ltr;
 }
 .detail__social {
   li {
@@ -614,7 +629,7 @@ ul.slick-dots {
   .slick-arrow {
     position: absolute;
     top: 100px;
-    z-index: 2;
+    z-index: 7;
   }
   .slick-left {
     left: 100px;
@@ -802,7 +817,7 @@ ul.slick-dots {
       border: none;
       padding-left: 20px;
       text-transform: uppercase;
-      & + input{
+      & + input {
         margin-left: 35px;
       }
     }
