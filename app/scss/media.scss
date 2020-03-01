@@ -206,6 +206,16 @@
       width: 100%;
     }
   }
+  .page__404-wrapper {
+    margin: 0 30px;
+    img {
+      width: 100%;
+    }
+    input {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
   .footer__inner-copy {
     display: block !important;
     margin: 0 30px;
