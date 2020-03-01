@@ -346,7 +346,6 @@ ul.slick-dots {
   color: #212121;
 }
 //end posts
-
 //start about-page
 .about__page {
   margin: 100px 0 105px;
@@ -359,6 +358,9 @@ ul.slick-dots {
   margin-right: 30px;
   max-width: 780px;
   background-color: #fff;
+  img{
+    width: 100%;
+  }
 }
 .about__label {
   margin-top: 65px;
@@ -969,7 +971,7 @@ ul.slick-dots {
 }
 .footer__col-name {
   img {
-    min-width: 270px;
+    min-width: 250px;
     min-height: 120px;
   }
 }

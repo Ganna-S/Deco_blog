@@ -18,6 +18,45 @@
   .posts__inner-item {
     min-width: 270px;
   }
+  .about__page {
+    .about-page-inner {
+      display: block;
+      .about-page__content {
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        .about__icon-imgp {
+          display: none;
+        }
+        .about__icon-img {
+          display: none;
+        }
+        .about__info {
+          display: block;
+          .about__info-author,
+          .about__info-date {
+            margin-left: 0;
+          }
+        }
+      }
+      .about-page__acide {
+        padding: 20px 30px;
+        max-width: 100%;
+        .aside__item {
+          width: 100%;
+          input {
+            width: 100%;
+          }
+          .post__item{
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+
   .footer__inner {
     flex-direction: column;
   }
