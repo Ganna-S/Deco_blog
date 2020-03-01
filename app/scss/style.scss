@@ -758,6 +758,7 @@ ul.slick-dots {
   background-color: #fff;
   color: #424242;
 }
+
 .contact__info-content {
   padding: 30px 30px 15px 20px;
   font-size: 14px;
@@ -796,12 +797,14 @@ ul.slick-dots {
   font-weight: 400;
   .contact-person {
     input {
-      width: 400px;
+      width: 390px;
       height: 50px;
       border: none;
       padding-left: 20px;
-      margin-right: 18px;
       text-transform: uppercase;
+      & + input{
+        margin-left: 35px;
+      }
     }
   }
   input {
