@@ -5,7 +5,7 @@
 //start header
 .header {
   min-height: 345px;
-  background-color: #212429;
+  background-color: #20022c;
   .header__box {
     padding: 20px;
     display: flex;
@@ -24,7 +24,7 @@
         margin-top: 15px;
         margin-left: -20px;
         display: none;
-        background-color: #212429;
+        background-color: #20022c;
         border-bottom: 2px solid #fff;
         border-top: 2px solid #fff;
         li {
@@ -156,7 +156,7 @@ ul.slick-dots {
       width: 310px;
       height: 50px;
       background-color: #fff;
-      border: none;
+      border: 1px solid #dddddd;
       margin-left: 15px;
       text-transform: uppercase;
       padding-left: 30px;
@@ -240,6 +240,7 @@ ul.slick-dots {
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+  padding: 0 10px;
 }
 .post__text {
   color: #464646;
@@ -418,17 +419,17 @@ ul.slick-dots {
   position: relative;
   input {
     background-color: #f9f9fb;
-    border: none;
+    border: 1px solid #dddddd;
     line-height: 28px;
     text-transform: uppercase;
-    padding: 5px 15px;
+    padding: 2.5px 15px;
   }
   button {
     position: absolute;
     top: 0;
     right: 0;
     border: none;
-    padding: 11px;
+    padding: 10px;
     background-color: #212121;
     color: #fff;
   }
@@ -814,7 +815,7 @@ ul.slick-dots {
     input {
       width: 390px;
       height: 50px;
-      border: none;
+      border: 1px solid #dddddd;
       padding-left: 20px;
       text-transform: uppercase;
       & + input {
@@ -825,7 +826,7 @@ ul.slick-dots {
   input {
     width: 820px;
     height: 50px;
-    border: none;
+    border: 1px solid #dddddd;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -907,7 +908,7 @@ ul.slick-dots {
 //start footer
 .footer {
   color: #f9f9fb;
-  background-color: #212429;
+  background-color: #20022c;
 }
 .footer__inner {
   display: flex;
@@ -915,7 +916,7 @@ ul.slick-dots {
   padding: 60px 0;
 }
 .footer__copy {
-  background-color: #17191c;
+  background-color: #110117;
 }
 .footer__col {
   max-width: 270px;
@@ -937,7 +938,7 @@ ul.slick-dots {
       font-size: 28px;
       position: absolute;
       bottom: 20px;
-      right: 15px;
+      right: 20px;
       transform: rotate(-15deg);
       z-index: 2;
     }
