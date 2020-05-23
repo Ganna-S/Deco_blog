@@ -206,7 +206,7 @@ ul.slick-dots {
   }
   button {
     width: 200px;
-    height: 45px;
+    height: 49px;
     color: #fff;
     font-weight: 400;
     border: none;
@@ -335,7 +335,8 @@ ul.slick-dots {
     margin-top: 60px;
   }
   a {
-    max-width: 270px;
+    overflow-wrap: break-word;
+    max-width: 240px;
     padding: 55px 10px;
     color: #fff;
   }
@@ -533,7 +534,7 @@ ul.slick-dots {
   padding-top: 15px;
 }
 .post__item-date {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 .icon-user,
 .icon-calendar {
