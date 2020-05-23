@@ -4,40 +4,16 @@
 
 //start header
 .header {
-  min-height: 345px;
+  min-height: 380px;
   background-color: #20022c;
   .header__box {
-    padding: 20px;
+    padding: 35px 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     &-social {
       li {
         width: 100%;
         margin-left: 40px;
-      }
-    }
-    &-menu {
-      width: 300px;
-      z-index: 4;
-      align-items: center;
-      ul {
-        margin-top: 15px;
-        margin-left: -20px;
-        display: none;
-        background-color: #20022c;
-        border-bottom: 2px solid #fff;
-        border-top: 2px solid #fff;
-        li {
-          display: block;
-          text-align: center;
-          & + li {
-            border-top: 1px solid #fff;
-          }
-        }
-        a {
-          color: #fff;
-          padding: 20px 0;
-        }
       }
     }
   }
@@ -53,6 +29,73 @@
   background-color: #fff;
   height: 4px;
   margin-bottom: 4px;
+}
+.header__box-menu{
+  background-color: #20022c;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  transition: all .5s;
+  z-index: 3;
+}
+.header__box-menu.active{
+  left: 0;
+}
+.container-menu{
+  position: relative;
+}
+.close-btn{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 120px;
+  top: 31px;
+  cursor: pointer;
+}
+.close-btn::after,
+.close-btn::before{
+  content: "";
+  width: 55px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transform-origin: left;
+}
+.close-btn::after{
+    transform: rotate(45deg);
+}
+.close-btn::before{
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+.menu__list li{
+  display: block;
+}
+.menu__list ul{
+  list-style: none;
+}
+.menu__list{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.menu__list a{
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 30px 25px 14px 0;
+  border-bottom: 3px solid #8fda18;
+  display: inline-block;
+  min-width: 328px;
+  transition: all .5s;
+}
+.menu__list a:hover{
+  border-color: #fff;
+  color: #8fda18;
+  transform: scale(1.2);
+  margin-left: 37px;
 }
 //end header
 
@@ -113,21 +156,19 @@ ul.slick-dots {
   display: none;
 }
 .slick-arrow {
-  width: 12px;
-  height: 26px;
   border: none;
   background: transparent;
 }
 
 .slick-up {
   position: absolute;
-  top: 160px;
+  top: 150px;
   right: 65px;
   z-index: 2;
 }
 .slick-down {
   position: absolute;
-  bottom: 175px;
+  bottom: 165px;
   right: 65px;
   z-index: 2;
 }
@@ -148,7 +189,7 @@ ul.slick-dots {
     letter-spacing: 4px;
     font-weight: 700;
     text-transform: uppercase;
-    max-width: 200px;
+    max-width: 210px;
     color: #212121;
   }
   &-data {
@@ -224,8 +265,9 @@ ul.slick-dots {
   text-align: center;
   color: #999999;
   text-transform: uppercase;
-  font-weight: 400;
-  line-height: 24px;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 8px;
 }
 .post__label {
   padding-top: 55px;
@@ -304,7 +346,7 @@ ul.slick-dots {
 .radius-img {
   img {
     border-radius: 50%;
-    margin-bottom: 155px;
+    margin-bottom: 50px;
   }
 }
 .icon-pencil,
@@ -365,7 +407,7 @@ ul.slick-dots {
 }
 .about__title {
   font-size: 28px;
-  line-height: 24px;
+  line-height: 32px;
   padding: 30px 0 20px;
 }
 .about__info {
@@ -392,7 +434,7 @@ ul.slick-dots {
   text-align: center;
   margin: 20px 20px;
   span {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
@@ -481,8 +523,8 @@ ul.slick-dots {
 }
 .post__item-title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 10px;
   text-transform: uppercase;
 }
 .post__item-info {
@@ -628,12 +670,13 @@ ul.slick-dots {
     padding-left: 10px;
   }
   .slick-arrow {
+    color: #fff;
     position: absolute;
     top: 100px;
     z-index: 7;
   }
   .slick-left {
-    left: 100px;
+    left: 140px;
   }
   .slick-right {
     right: 140px;
@@ -660,6 +703,11 @@ ul.slick-dots {
 }
 .short__post-inner {
   display: flex;
+  img {
+    width: 50%;
+    min-height: 50%;
+    justify-content: center;
+  }
 }
 .short__post-content {
   margin: 25px 20px;
@@ -712,13 +760,12 @@ ul.slick-dots {
     font-weight: 400;
     background-color: #fff;
     padding: 14px 20px;
-    font-size: 16px;
   }
 }
 
 .recomended__posts {
-  padding: 40px 30px 0 30px;
   font-family: "Montserrat", sans-serif;
+  padding: 40px 30px 0 30px;
   font-weight: 700;
 }
 .recomended__posts-title {
@@ -935,9 +982,9 @@ ul.slick-dots {
     position: relative;
     span {
       font-family: "Mrs Saint Delafield", cursive;
-      font-size: 28px;
+      font-size: 26px;
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
       right: 20px;
       transform: rotate(-15deg);
       z-index: 2;

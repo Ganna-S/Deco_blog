@@ -38,6 +38,7 @@
           .about__info-author,
           .about__info-date {
             margin-left: 0;
+            font-size: 14px;
           }
         }
       }
@@ -53,15 +54,21 @@
             justify-content: flex-start;
           }
         }
+        .aside-slider{
+          display: none;
+        }
       }
     }
   }
-  .post__slider-text {
+  .picture {
+    display: none;
+  }
+  .post__slider {
     display: none;
   }
   .recomended__posts-item img {
     min-width: 100%;
-    padding-right: 10px;
+    padding: 10px;
   }
   .contacts__page {
     .contacts__page-inner {
@@ -102,13 +109,18 @@
       margin-bottom: 60px;
     }
   }
-  .footer__inner {
+  .footer__content .footer__inner {
     flex-direction: column;
+    padding: 0 0 20px;
+    .footer__col + .footer__col {
+      margin-left: 0;
+    }
   }
   .footer__col {
-    margin: 0 30px;
+    margin: 0;
     min-width: 100%;
   }
+
   .footer__col-name {
     span {
       display: none;
@@ -145,14 +157,10 @@
     display: none;
   }
   .short__post {
-    .short__post-inner {
-      flex-direction: column;
-    }
-    .short__post-social {
-      .box__social {
-        flex-direction: column;
-      }
-    }
+    display: none;
+  }
+  .about__page {
+    margin: 30px 0 30px !important;
   }
   .about__page.ditail__page {
     margin: 60px 0 60px;
@@ -160,7 +168,7 @@
   .about-page__content {
     text-align: center;
     img {
-      width: 50%;
+      width: 100%;
       padding-top: 30px;
     }
   }
@@ -222,21 +230,19 @@
       margin-bottom: 20px;
     }
   }
-  .footer__inner-copy {
-    display: block !important;
-    margin: 0 30px;
-    a {
-      margin-right: 20px;
-    }
+  .footer__col .footer__col-title {
+    font-size: 14px;
   }
   .footer__copy-text {
     padding-bottom: 10px;
   }
 }
-@media (max-width: 700px) {
-  .signup__box-data input {
-    margin-bottom: 10px;
-    margin-left: 0;
+@media (max-width: 730px) {
+  .signup {
+    .signup__box-data input {
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
   }
   .detail__social-box {
     flex-direction: column;
@@ -257,6 +263,16 @@
       font-size: 28px;
     }
   }
+  .slider__box-item {
+    height: 480px;
+  }
+  .footer__copy .footer__inner-copy {
+    display: block;
+    margin: 0;
+  }
+  .footer__copy .footer__inner-copy a {
+    margin-left: 0;
+  }
 }
 @media (max-width: 380px) {
   .slider {
@@ -264,8 +280,11 @@
       margin: 150px 0 150px 20px;
     }
   }
+  .slider__box-item {
+    height: 380px;
+  }
   .signup__box-data input {
-    max-width: 260px;
+    max-width: 220px;
     max-height: 35px;
   }
   .aside__item {

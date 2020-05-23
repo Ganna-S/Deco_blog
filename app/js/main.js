@@ -114,34 +114,8 @@ $(function () {
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
-        prevArrow: '<button class="slick-arrow slick-left"><img src="images/left.png" alt=""></button>',
-        nextArrow: '<button class="slick-arrow slick-right"><img src="images/right.png" alt=""></button>',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    dots: false,
-                    prevArrow: false,
-                    nextArrow: false,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: false,
-                    prevArrow: false,
-                    nextArrow: false,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                }
-            },
-        ]
+        prevArrow: '<button class="slick-arrow slick-left"><img src="images/left.png" alt="">Previous post</button>',
+        nextArrow: '<button class="slick-arrow slick-right">Next post<img src="images/right.png" alt=""></button>',
     });
     $('.recomended__posts-inner').slick({
         slidesToShow: 3,
@@ -185,12 +159,14 @@ $(function () {
     });
 
     $('.header__menu-btn').on('click', function () {
-        $('.header__box-menu ul').slideToggle();
+        $('.header__box-menu').addClass('active');
+    });
+    $('.close-btn').on('click', function () {
+        $('.header__box-menu').removeClass('active');
     });
 
     jQuery(document).ready(function ($) {
-        $('.posts__inner').masonry({
-            // options
+        $('.posts__inner').masonry({// options
             itemSelector: '.posts__inner-item',
             columnWidth: '.persent-size',
             gutter: '.gutter-width',
